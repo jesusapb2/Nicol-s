@@ -6,9 +6,14 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <title>Document</title>
         <style>
+            #contenedor{
+                width: 50%;
+                margin: auto;
+            }
+            /* Pasar a botón un hipervínculo */
             a{
                 display: block;
-                width: 180px;
+                width: 280px;
                 height: 30px;
                 background-color:antiquewhite;
                 border: 1px solid red;
@@ -16,11 +21,21 @@
                 line-height: 30px;
                 text-decoration: none;
                 color: red;
+                box-shadow: 2px 2px 1px;
+            }
+            /*
+            a:hover{
+                transform: scale(0.5);
+            }*/
+            a:active{
+                transform: scale(1.5);
             }
         </style>
     </head>
     <body>
-        <p>Hola Mundo</p>
-        <a href="./index.html" download="index_descargado.html">Descarga esta web</a>
+        <div id="contenedor">
+            <p>Hola Mundo</p>
+            <a href="./index.html" download="index_descargado.html">Descarga el código de esta web</a>
+        </div>
     </body>
 </html>
